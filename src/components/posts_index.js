@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
+import MoneyTable from './money-components/money-table';
 
 class PostsIndex extends Component {
 
@@ -37,6 +38,15 @@ class PostsIndex extends Component {
         <ul className="list-group">
           { this.renderPosts() }
         </ul>
+        <div className="money-tables">
+          <MoneyTable />
+          <MoneyTable />
+        </div>
+
+        <div className="money-tables">
+          <MoneyTable isShort={true}/>
+          <MoneyTable isShort={true}/>
+        </div>
       </div>
     );
   }

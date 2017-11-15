@@ -1,3 +1,63 @@
 form a {
   margin-left: 5px;
 }
+
+.money-tables {
+  display: flex;
+  flex-flow: row wrap;
+  width: 750px;
+  margin: auto auto
+}
+
+.money-table {
+  display: flex;
+  flex-flow: column;
+  width: 330px;
+  margin: 5px 20px;
+}
+
+.money-table .money-table__row {
+  display: flex;
+  flex-flow: row;
+}
+
+.money-table__row .money-block,
+.money-table__row .category-block {
+  margin: 10px 35px;
+}
+
+.money-block {
+  display: flex;
+  flex-flow: column;
+}
+
+.money-block .money-block__value {
+  font-size: 36px;
+}
+
+.money-block .money-block__date {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.category-block__icon {
+  color: #000000;
+}
+
+.category-block__icon i.fa {
+  font-size: 50px;
+}
+
+.category-block .category-block__name {
+  text-align: center;
+  margin: 0;
+}
+
+hr.linebreak {
+  display: block;
+  margin: 1px auto;
+  border: 1px solid;
+  width: 50px;
+  color: lightgrey;
+}
+
